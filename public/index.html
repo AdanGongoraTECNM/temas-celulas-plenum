@@ -1,44 +1,46 @@
 <!-- public/index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Navigation</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body onload="loadHome()">
+  <body onload="loadHome()">
     <nav class="navbar">
-        <ul class="nav-links">
-            <li><a onclick="loadContent('/content/')">Home</a></li>
-            <li><a onclick="loadContent('/content/tema-1/1')">Tema 1.1</a></li>
-            <li><a onclick="loadContent('/content/tema-1/2')">Tema 1.2</a></li>
-            <li><a onclick="loadContent('/content/tema-1/3')">Tema 1.3</a></li>
-            <li><a onclick="loadContent('/content/tema-1/4')">Tema 1.4</a></li>
-            <li><a href="https://github.com/AdanGongoraMartinez/temas-celulas-plenum">Código</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a onclick="loadContent('/content/')">Home</a></li>
+        <li><a onclick="loadContent('/content/tema-1/1')">Tema 1.1</a></li>
+        <li><a onclick="loadContent('/content/tema-1/2')">Tema 1.2</a></li>
+        <li><a onclick="loadContent('/content/tema-1/3')">Tema 1.3</a></li>
+        <li><a onclick="loadContent('/content/tema-1/4')">Tema 1.4</a></li>
+        <li>
+          <a href="https://github.com/AdanGongoraTECNM/temas-celulas-plenum"
+            >Código</a
+          >
+        </li>
+      </ul>
     </nav>
     <main id="content-area">
-        <!-- El contenido dinámico se cargará aquí -->
+      <!-- El contenido dinámico se cargará aquí -->
     </main>
 
     <script>
-        function loadContent(url) {
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content-area').innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Error al cargar el contenido:', error);
-                });
-        }
-        function loadHome() {
-            loadContent('/content/');
-        }
+      function loadContent(url) {
+        fetch(url)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("content-area").innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Error al cargar el contenido:", error);
+          });
+      }
+      function loadHome() {
+        loadContent("/content/");
+      }
     </script>
-</body>
-
+  </body>
 </html>
