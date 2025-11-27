@@ -1,0 +1,17 @@
+/node_modules
+/public/styles.css.map
+.env
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+coverage/
+*.bak
+*.swp
+*.tmp
+

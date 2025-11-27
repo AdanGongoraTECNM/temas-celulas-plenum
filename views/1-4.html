@@ -1,0 +1,116 @@
+<div class="container">
+    <h1>Patrones de Diseño</h1>
+
+    <a>
+        Los patrones de diseño son soluciones probadas a problemas recurrentes en el diseño de software. Ayudan a estructurar un sistema definiendo los módulos a implementar, la función de cada uno y cómo se relacionan entre sí.
+    </a>
+
+    <h2>Características de los Patrones de Diseño</h2>
+    <ol>
+        <li>
+            <strong>Nombre y clasificación:</strong> Identificación del patrón y su categoría.
+        </li>
+        <li>
+            <strong>Propósito:</strong> Problema que resuelve y objetivos que cumple.
+        </li>
+        <li>
+            <strong>Motivación:</strong> Especifica los módulos y detalles internos de cada parte del sistema.
+        </li>
+        <li>
+            <strong>Aplicabilidad:</strong> Situaciones en las que se debe usar el patrón.
+        </li>
+        <li>
+            <strong>Estructura:</strong> Representación gráfica o textual de las relaciones entre componentes.
+        </li>
+        <li>
+            <strong>Participantes:</strong> Elementos involucrados en el patrón.
+        </li>
+        <li>
+            <strong>Colaboradores:</strong> Cómo interactúan los parti ipantes entre sí.
+        </li>
+        <li>
+            <strong>Consecuencias:</strong> Ventajas, desventajas y efectos del uso del patrón.
+        </li>
+        <li>
+            <strong>Implementación:</strong> Detalles técnicos sobre cómo implementar el patrón.
+        </li>
+        <li>
+            <strong>Código de ejemplo:</strong> Ejemplo práctico de implementación.
+        </li>
+        <li>
+            <strong>Usos conocidos:</strong> Ejemplos de sistemas o proyectos que usan el patrón.
+        </li>
+        <li>
+            <strong>Patrones relacionados:</strong> Conexión con otros patrones.
+        </li>
+    </ol>
+</div>
+
+<div class="container">
+    <h2>Clasificación de Patrones</h2>
+    <ol>
+        <li>
+            <strong>Patrones Horizontales:</strong>
+            <ul>
+                <li>Aplicables de manera general, independientemente del contexto o dominio.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Patrones Verticales:</strong>
+            <ul>
+                <li>Aplicables en un entorno específico o dominio particular.</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<div class="container">
+
+    <h1>Patrón Singleton</h1>
+    <p>
+        El patrón Singleton asegura que una clase tenga una única instancia en toda la aplicación y que esta sea accesible globalmente.
+    </p>
+
+    <strong>Ventajas del Patrón Singleton:</strong>
+    <ul>
+        <li>
+            Mejor uso de recursos, especialmente memoria.
+        </li>
+    </ul>
+
+    <strong>Precauciones:</strong>
+    <ul>
+        <li>
+            No se debe abusar del patrón Singleton, ya que puede generar problemas de acoplamiento y dificultar la prueba de código.
+        </li>
+    </ul>
+
+    <strong>Requisitos para Implementar un Patrón Singleton:</strong>
+    <ol>
+        <li>
+            <strong>Atributo estático y privado:</strong>
+            <p>
+                Una referencia estática privada que apunta a la única instancia de la clase.
+            </p>
+        </li>
+        <li>
+            <strong>Constructor privado:</strong>
+            <p>
+                Evita que se creen instancias adicionales desde fuera de la clase.
+            </p>
+        </li>
+        <li>
+            <strong>Método estático y público:</strong>
+            <p>
+                Devuelve la misma instancia única de la clase.
+            </p>
+        </li>
+    </ol>
+</div>
+
+<div class="container">
+    <h2>Nota sobre Spring y Singleton</h2>
+    <p>
+        Spring maneja automáticamente el patrón Singleton para los Beans declarados en su contenedor de inversión de control (IoC), simplificando su uso y asegurando la gestión eficiente de instancias.
+    </p>
+</div>
